@@ -1,0 +1,14 @@
+{{!-- Google wants *all* language versions as *alternatate* hreflang"
+https://developers.google.com/search/docs/advanced/crawling/localized-versions
+--}}
+
+{{#with page.versions}}
+  {{#each this}}
+  {{#unless ./missing }}
+    <link rel="alternate" hreflang="{{./version}}" href="{{{@root.site.url}}}{{{url}}}" >    
+  {{/unless}}
+  {{/each}}
+{{/with}}
+
+{{!-- Add additional meta tags here --}}
+<link rel="icon" href="{{{uiRootPath}}}/img/favicon.ico" type="image/x-icon">
