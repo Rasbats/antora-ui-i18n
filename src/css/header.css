@@ -32,7 +32,7 @@ body {
 .navbar-brand {
   display: flex;
   flex: auto;
-  padding-left: 5rem;
+  padding-left: 1rem;
 }
 
 .navbar-brand .navbar-item:first-child {

@@ -1,11 +1,12 @@
 <header class="header">
   <nav class="navbar">
+    <div class="ocpn-logo"> </div>
     <div class="navbar-brand">
       <a class="navbar-item" href="{{{or site.url (or siteRootUrl siteRootPath)}}}">{{site.title}}</a>
       {{#if env.SITE_SEARCH_PROVIDER}}
       <div class="navbar-item search hide-for-print">
         <div id="search-field" class="field">
-          <input id="search-input" type="text" placeholder="Rechercher..."{{#if page.home}} autofocus{{/if}}>
+          <input id="search-input" type="text" placeholder="Search the docs"{{#if page.home}} autofocus{{/if}}>
         </div>
       </div>
       {{/if}}
@@ -14,6 +15,6 @@
         <span></span>
         <span></span>
       </button>
-    </div>    
+    </div>
   </nav>
 </header>
